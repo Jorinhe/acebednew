@@ -2181,12 +2181,19 @@ footer .copy {
         font-size: 1rem;
     }
 
+    footer>:nth-child(1)> :nth-child(3)> :nth-child(2)  {
+        display: flex;
+    }
+    footer>:nth-child(1)> :nth-child(3)> :nth-child(2)> :nth-child(1) {
+        margin-right: 10px;
+    }
+    
     footer>:nth-child(1)> :nth-child(3)> :nth-child(2) button {
         border: 1px solid #464646;
         background: none;
         color: rgb(36, 36, 36);
         border-radius: 0;
-        padding: 20px 50px;
+  
         margin-top: 50px;
         font-size: 1rem;
     }
