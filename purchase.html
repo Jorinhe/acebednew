@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>purchase</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="purchase.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!--Jquery-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+</head>
+
+<body>
+    <div w3-include-html="header.html"></div>
+    
+    <article class="mains">
+        <div>
+            <img src="./img/new1.jpg">
+        </div>
+        <div>
+            <div class="mains1">
+                <div>
+                    <h1>AMANDE <span>K</span></h1>
+                    <p>실루엣을 강조한 세미클래식 침대</p>
+                </div>
+                <div>
+                    <img src="./img/b-share.png">
+                    <img src="./img/b-heart.png">
+                </div>
+            </div>
+            <div class="sell">
+                <div>
+                    <div>
+                        <div>
+                            <p>판매가</p>
+                            <p>2,169,000원</p>
+                        </div>
+                        <div>
+                            <p>배송가능지역</p>
+                            <p>전국(도서 산간 제외)</p>
+                        </div>
+                        <div>
+                            <p>배송방법</p>
+                            <p>에이스 직배송</p>
+                        </div>
+                        <div>
+                            <p>배송비</p>
+                            <p>무료배송</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="option1">
+                    <div>
+                        <ul>
+                            <li>
+                                <span>색상(필수)</span>
+                                <ul>
+                                    <li>
+                                        <select select id="select1">
+                                            <option value="0">색상선택</option>
+                                            <option value="2169000">파우더핑크 <span>2,169,000원</span> </option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>매트리스(필수)</span>
+                                <ul>
+                                    <li>
+                                        <select select id="select2">
+                                            <option value="0">선택해주세요</option>
+                                            <option value="0">매트 없음 <span>0원</span></option>
+                                            <option value="1807000">HYBRID TECHLIME <span>1,807,000원</span></option>
+                                            <option value="1824000">HYBRID TECH ALPHA <span>1,824,000원</span></option>
+                                            <option value="2023000">HYBRID TECH WHITE <span>2,023,000원</span></option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>룸세트</span>
+                                <ul>
+                                    <li>
+                                        <select id="select3">
+                                            <option value="0">선택해주세요.</option>
+                                            <option value="158000">선택 [01]
+                                                REGINA 협탁 <span>158,000원</span>
+                                            </option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="total">
+                        <div>
+                            <p>총상품금액</p>
+                            <p id="totalPrice">0원</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="checks-btn">
+                    <button id="btn-modal2">장바구니</button>
+                    <button id="btn-modal1">구매하기</button>
+                </div>
+    </article>
+
+    <div id="modal" class="modal-overlay">
+        <div class="modal-window">
+            <div class="title">
+                <h2>로그인</h2>
+            </div>
+            <div class="close-area xi-close"></div>
+            <div class="content">
+                <p>로그인이 필요한 서비스 입니다.</p>
+            </div>
+            
+        </div>
+    </div>
+   
+
+
+    <script style="display: none;">
+        var select1 = document.getElementById('select1');
+        var select2 = document.getElementById('select2');
+        var select3 = document.getElementById('select3');
+        var totalPrice = document.getElementById('totalPrice');
+
+        select1.onchange = calculatePrice;
+        select2.onchange = calculatePrice;
+        select3.onchange = calculatePrice;
+
+        function calculatePrice() {
+            var price1 = parseInt(select1.value);
+            var price2 = parseInt(select2.value);
+            var price3 = parseInt(select3.value);
+            var total = price1 + price2 + price3;
+            totalPrice.innerText = total + ' 원';
+        }
+    </script>
+
+
+
+    <article class="inpo">
+        <div>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div>
+                    <h1>실루엣을 강조한 세미 클래식 침대</h1>
+                    <p>볼륨감이 느껴지는 아치스타일의 헤드보드는 포근한 분위기를 연출하며, 유니크한 파우더 핑크 컬러는 로멘틱한 분위기를 한층 더해줍니다.</p>
+                </div>
+
+                <div>
+                    <img src="./img/p-im1.jpg">
+                </div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <div>
+                    <h1>볼륨감과 쿠션감을 갖춘 헤드보드</h1>
+                    <p>헤드보드 중앙에서 부드럽게 내려오는 쉐입은 포근한 느낌을 연출하며 81mm 두께의 헤드보드는 탄탄한 쿠션감을 가지고 있어, 기댔을 때 더욱 편안한 안정감을 전달해 줍니다.
+                    </p>
+                </div>
+
+                <div>
+                    <img src="./img/p-im2.jpg">
+                </div>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div>
+                    <h1>은은한 핑크빛의 파우더핑크 컬러</h1>
+                    <p>파우더핑크 컬러는 침실분위기에 따듯함과 차분함을 더해줍니다. 또한 테두리의 섬세하고 깔끔한 스티치 마감은 고급스러운 느낌을 연출합니다.</p>
+                </div>
+
+                <div>
+                    <img src="./img/p-im3.jpg">
+                </div>
+            </div>
+
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <div>
+                    <h1>안정적인 투매트리스 시스템</h1>
+                    <p>N타입의 프레임은 140mm의 높은 발통으로 공간 개방감을 느낄 수 있습니다. 또한 파운데이션을 통해 하단에 가해지는 하중을 분산시켜 매트리스 수명을 늘려주고 쾌적한 환경을
+                        연출합니다.</p>
+                </div>
+
+                <div>
+                    <img src="./img/p-im4.jpg">
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="image">
+        <div>
+            <img class="pc-none" src="./img/inpo-m.jpg">
+        </div>
+        <div>
+            <img class="mobile-none pc-show" src="./img/inpo-p.jpg">
+        </div>
+    </article>
+
+    <article class="room"  data-aos="fade-up">
+        <h1>ROOM SET</h1>
+        <p class="mobile-none pc-show">에이스침대와 꼭 맞는 룸 세트로 심플하면서도 고급스러운 침실 공간을 연출해보세요.</p>
+        <div>
+            <img src="./img/with.jpg">
+            <p>REGINA 협탁 <span>파우더핑크</span></p>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </article>
+
+    <article class="review">
+        <div>
+            <div>
+                <div>
+                    <h1>상품후기</h1>
+                    <p><span>0</span>건</p>
+                </div>
+                <div>
+                    <button >후기 작성하기</button>
+                    <button class="mobile-none">전체보기</button>
+                </div>
+            </div>
+            <div>
+                <p>
+                    상품과 직접 관련이 없는 내용은 동의 없이 담당 게시판으로 이동될 수 있습니다.
+                    배송, 구매 관련 내용은 고객센터 해당 게시판을 이용해주세요.
+                </p>
+            </div>
+            <div>
+                <p>등록된 후기가 없습니다.</p>
+            </div>
+            <div>
+                <button>전체보기</button>
+            </div>
+        </div>
+
+    </article>
+
+    
+    <div w3-include-html="footer.html"></div>
+<script>
+    AOS.init({
+        duration: 1500,
+    })
+</script>
+
+<script>
+    includeHTML();
+</script>
+
+
+</body>
+
+</html>

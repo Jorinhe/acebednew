@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+    <title>ACEBED</title>
+
+    <!-- 임티 https://xpressengine.github.io/XEIcon/started.html -->
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <script type="text/javascript" src="script.js"></script>
+
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+</head>
+
+<body>
+
+    <div w3-include-html="header.html"></div>
+
+    <article class="bye">
+        <h1>Remove Account</h1>
+        <div class="artbox">
+            <h1>회원탈퇴</h1>
+            <p>정말로 탈퇴하시겠습니까?</p>
+            <p>탈퇴 시 이용내역이 삭제되며<br>서비스 이용이 제한됩니다<br>또한 삭제된 계정은 복구되지 않습니다.</p>
+            <button>탈퇴하기</button>
+        </div>
+    </article>
+
+    <article class="artbox reason">
+
+        <h1>설문조사</h1>
+
+        <p>불편했던 점, 개선할 점을 공유해주시면 <br>더 나은 서비스를 위해 반영하도록 하겠습니다.</p>
+
+        <div>
+            <p>탈퇴 사유</p>
+            <select>
+                <option>선택해주세요.</option>
+                <option>기록을 삭제하기 위하여</option>
+                <option>이용에 불편함과 장애가 많아서</option>
+                <option>다른 사이트가 더 좋아서</option>
+                <option>콘텐츠에 불만족</option>
+                <option>원하는 기능이 없어서</option>
+                <option>더 이상 필요가 없어져서</option>
+                <option>사이트의 방향성이 가치관과 맞지 않아서</option>
+                <option>기타</option>
+            </select>
+            <div>
+                <p>건의 사항</p>
+                <textarea placeholder="소중한 의견 귀담아 듣겠습니다"></textarea>
+            </div>
+            <button>제출하기</button>
+        </div>
+
+    </article>
+
+    <article class="artbox remove">
+        <h1>탈퇴완료</h1>
+        <img src="./img/stop.png">
+        <p>정상적으로 탈퇴 처리 되었습니다.</p>
+        <p>그 동안 이용해주셔서 감사합니다.</p>
+        <button>홈으로</button>
+    </article>
+
+    <div>
+        <a href="#"><button class="top-button">TOP</button></a>
+    </div>
+
+    <div w3-include-html="footer.html"></div>
+
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        includeHTML();
+    </script>
+
+
+</body>
+
+</html>

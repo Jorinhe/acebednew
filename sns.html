@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+    <title>ACEBED</title>
+
+    <!-- 임티 https://xpressengine.github.io/XEIcon/started.html -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="board.css">
+    <script type="text/javascript" src="script.js"></script>
+
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div w3-include-html="header.html"></div>
+
+        
+	<div class="news-slid">
+		<h1>NOW SNS</h1>
+	</div>
+
+
+	<article class="news-list list">
+		<div>
+			<h3>NAVER BLOG</h3>
+			<div>
+				<select>
+					<option value="">전체</option>
+					<option value="">제목</option>
+					<option value="">내용</option>
+				</select>
+				<div>
+					<input type="text" placeholder="검색어를 입력하세요.">
+					<img
+						src="./img/b-ehe.png">
+				</div>
+			</div>
+		</div>
+		<section>
+			<div>
+				<img src="./img/sns1.jpeg">
+				<div>+</div>
+			</div>
+			<div>
+				<h3> 겨울을 마중하는 11월, 연말 침실 인테리어</h3>
+				<p>얼마 남지 않은 가을을 떠나보내며 겨울을 마중하는 11월, 계절의 변화에 맞춘 새로운 인테리어를 고민하는 분들이 많으실 것 같은데요!</p>
+				<small>23.11.14</small>
+			</div>
+		</section>
+		<section>
+			<div>
+				<img src="./img/sns2.jpeg">
+				<div>+</div>
+			</div>
+			<div>
+				<h3> [에이스테이] 화이트 톤의 미니멀 싱글하우스</h3>
+				<p>공원 뷰를 품은 매력적인 공간에서 자취를 시작한 이예지 고객님! 바쁜 일상 속 오롯이 편안한 휴식을 선사하는 ERBA와 함께하는 에이스테이 후기를 들어보았습니다. </p>
+				<small>22.05.23</small>
+			</div>
+		</section>
+		<section>
+			<div>
+				<img src="./img/sns3.jpeg">
+				<div>+</div>
+			</div>
+			<div>
+				<h3>[에이스테이] 호텔 스위트룸이 연상되는 모던&미니멀 인테리어</h3>
+				<p>감각있는 원룸 인테리어는 물론, 뛰어난 손재주로 요리까지 완벽한 취미부자 김민지 고객님. 작년 10월, 자취라이프를 마무리하고 알콩달콩한 신혼 생활을 보내고 있는데요. </p>
+				<small>22.05.21</small>
+			</div>
+		</section>
+		<section>
+			<div>
+				<img src="./img/sns4.jpeg">
+				<div>+</div>
+			</div>
+			<div>
+				<h3>[에이스테이] 고양이, 식물과 함께 어울려 살아가는 1인 가구의 그린&우디 인테리어</h3>
+				<p>침대를 바꾸고 자고 일어나서, 완전히 숙면했다는 기분을 느낀 게 정말 오랜만이었죠.에이스침대는 제가 지금의 집을 구성한 것들 중 가장 잘한 소비예요.</p>
+				<small>22.05.18</small>
+			</div>
+		</section>
+		<section>
+			<div>
+				<img src="./img/sns5.jpeg">
+				<div>+</div>
+			</div>
+			<div>
+				<h3>아이와 포근한 한때를 보내는 신혼부부의 톤온톤 인테리어</h3>
+				<p>짧은 신혼 기간 이후 귀여운 아들과 함께 온전한 시간을 보내고 계시는 박여진 고객님. 신혼집을 취향이 가득한 공간에서 아이와 함께하는 안락한 공간으로 꾸미셨는데요. </p>
+				<small>22.01.27</small>
+			</div>
+		</section>
+		<section>
+			<div>
+				<img src="./img/sns6.jpg">
+				<div>+</div>
+			</div>
+			<div>
+				<h3>모던 인테리어의 트렌디한 독립 라이프</h3>
+				<p>트렌디한 것을 좋아하는 그녀의 독립 라이프가 담긴 공간은 어떤 모습일지 궁금합니다. 비비드한 컬러의 소품들과 함께 베를린을 여행하면서 느낀 영감으로 꾸민 공간에 대한 이야기와...
+				</p>
+				<small>21.12.13</small>
+			</div>
+		</section>
+		<div class="page">
+			<p class="checkpage">1</p>
+			<p>2</p>
+			<p>3</p>
+			<p>4</p>
+			<p>5</p>
+		</div>
+	</article>
+
+    
+    <div w3-include-html="footer.html"></div>
+
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+    <script>
+		// document.getElementById(' ').classList.toggle(' ');
+		//  document.getElementById(" ").style.display = " ";
+
+		// var pCont = document.querySelectorAll(".page p")
+
+
+
+		// var pCont = document.querySelectorAll(".page p")
+
+		// pCont.forEach((p) => {
+		//   p.onclick = () => {
+		//     pCont.forEach((p) => {
+		//       p.classList.remove("checkpage")
+		//     })
+		//     p.classList.add("checkpage")
+		//   }
+		// })
+
+
+		// News 페이지 넘버
+		window.addEventListener("load", function () {
+			const tagList = document.querySelectorAll(".page > p");
+			for (let i = 0; i < tagList.length; i++) {
+				tagList[i].addEventListener("click", function () {
+					clearPage();
+					this.classList.add("checkpage");
+				});
+			}
+
+			function clearPage() {
+
+				for (let i = 0; i < tagList.length; i++) {
+					tagList[i].classList.remove("checkpage");
+				}
+			}
+		});
+
+
+		// fqa 리스트 탭
+		window.addEventListener("load", function () {
+			const tapList = document.querySelectorAll(".listtap > li");
+			for (let i = 0; i < tapList.length; i++) {
+				tapList[i].addEventListener("click", function () {
+					cleartap();
+					this.classList.add("tapsee");
+					if (i == 0) {
+						document.getElementById("list1").style.display = "block";
+						document.getElementById("list2").style.display = "none";
+						document.getElementById("list3").style.display = "none";
+						document.getElementById("list4").style.display = "none";
+					} else if (i == 1) {
+						document.getElementById("list1").style.display = "none";
+						document.getElementById("list2").style.display = "block";
+						document.getElementById("list3").style.display = "none";
+						document.getElementById("list4").style.display = "none";
+					} else if (i == 2) {
+						document.getElementById("list1").style.display = "none";
+						document.getElementById("list2").style.display = "none";
+						document.getElementById("list3").style.display = "block";
+						document.getElementById("list4").style.display = "none";
+					} else if (i == 3) {
+						document.getElementById("list1").style.display = "none";
+						document.getElementById("list2").style.display = "none";
+						document.getElementById("list3").style.display = "none";
+						document.getElementById("list4").style.display = "block";
+					}
+				});
+			}
+
+			function cleartap() {
+
+				for (let i = 0; i < tapList.length; i++) {
+					tapList[i].classList.remove("tapsee");
+				}
+			}
+		});
+
+
+		// fqa 리스트 아코디언
+
+		window.addEventListener("load", function () {
+			const List = document.querySelectorAll(".listq");
+			for (let i = 0; i < List.length; i++) {
+				List[i].addEventListener("click", function () {
+					clearlist();
+					var panel = this.nextElementSibling;
+					panel.classList.add("listsee");
+				});
+			}
+
+			function clearlist() {
+				for (let i = 0; i < List.length; i++) {
+					var panel = List[i].nextElementSibling;
+					panel.classList.remove("listsee");
+				}
+			}
+		});
+
+
+		// faq 페이지 넘버
+		window.addEventListener("load", function () {
+			const tagList = document.querySelectorAll(".faq-page > p");
+			for (let i = 0; i < tagList.length; i++) {
+				tagList[i].addEventListener("click", function () {
+					clearPage();
+					this.classList.add("faq-checkpage");
+				});
+			}
+
+			function clearPage() {
+
+				for (let i = 0; i < tagList.length; i++) {
+					tagList[i].classList.remove("faq-checkpage");
+				}
+			}
+		});
+
+	</script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+        includeHTML();
+    </script>
+
+ 
+</body>
+
+</html>

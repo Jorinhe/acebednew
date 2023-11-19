@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+    <title>ACEBED</title>
+
+    <!-- 임티 https://xpressengine.github.io/XEIcon/started.html -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="board.css">
+    <script type="text/javascript" src="script.js"></script>
+
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+</head>
+
+<body>
+
+    <main>
+
+        <div w3-include-html="header.html"></div>
+
+        <article class="bd-text">
+
+            <h1>REVIEW</h1>
+    
+        </article>
+    
+    
+        <article class="bd-write">
+            <h3>글 작성하기</h3>
+            <select>
+                <option value="">카테고리</option>
+                <option value="">포토 후기</option>
+                <option value="">100일 후기</option>
+                <option value="">스트레스리스</option>
+            </select>
+    
+            <input type="text" placeholder="제목을 입력하세요.">
+    
+            <textarea name="" placeholder="내용을 입력하세요."></textarea>
+            <div>
+                <input type="file" id="file">
+                <label for="file"><img
+                        src="./img/plus.png"></label>
+                <input type="file" id="file">
+                <label for="file"><img
+                        src="./img/plus.png"></label>
+                <input type="file" id="file">
+                <label for="file"><img
+                        src="./img/plus.png"></label>
+                <input type="file" id="file">
+                <label for="file"><img
+                        src="./img/plus.png"></label>
+            </div>
+            <div> <button class="btn-eee">임시저장</button> <button class="btn-555">등록하기</button> </div>
+        </article>
+    
+    
+        <article class="bd-see">
+            <h2>고객 후기</h2>
+    
+            <div class="see-title">
+                <h3>LUCE-III</h3>
+                <button>프레임 구매하기</button>
+            </div>
+    
+            <div class="see-main">
+                <div>
+                    <p><span>작성자</span>: 정*주 </p>
+                    <div>
+                        <p>2023.05.02</p>
+                        <div>
+                            <p>좋아요</p><span>24</span>
+                            <p>조회수</p><span>312</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="see-text">
+                    <section>
+                        <div><img src="./img/see1.jpeg">
+                        </div>
+    
+                    </section>
+                    <section>
+                        <div><img src="./img/see2.jpeg">
+                        </div>
+                        <p>신세계 하남점에서 구입 했는데
+                            너무 친절하시고 배송까지 신경 써주셔서 좋았어요! <br>
+                            중간에 배송 방법 및 날짜 시간도 바꿔야 하는 상황이 생겨서 바꿨는데 싫은 내색 하나도 없으시고 너무 친절하게 바꿔주셨어요 !
+                            점장님 정말 찐이세요!
+                            너뮤 감사해서 배송 받고 나서 문자로 연락도 따로 드렸어요! 다음에 아기 낳거나 본가 침대 바꾼다 하면 신세계 하남점에서 무조건 구입 할거에요!
+    
+                            프레임은 볼수록 이뻐요 너무 튀지도 않고 집과 물아일체가 되는데 너무 이뻐요~~~~ 조명도 눈부시지 않고 딱 좋구요! 너무 잘 산거 같아서 기분 좋아요!!
+                            :) </p>
+                    </section>
+    
+                </div>
+    
+                <div class="see-sharing">
+                    <button><img
+                            src="./img/heart.png"></button>
+                    <button><img
+                            src="./img/share.png"></button>
+    
+                </div>
+            </div>
+    
+            <div class="see-comments">
+    
+                <p>댓글 2개</p>
+    
+                <section>
+                    <div> <img
+                            src="./img/prople.png"
+                            alt=""></div>
+                    <div>
+                        <p>acemc</p>
+                        <p>덕분에 참고 하고 사겠습니다. 도움이 되는 리뷰였어요!</p>
+                        <p>1시간 전</p>
+                    </div>
+                    <div><img
+                            src="./img/dotdot.png">
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <img src="./img/prople.png"
+                            alt="">
+                    </div>
+                    <div>
+                        <p>acehanam53</p>
+                        <p>저도 에이스 하남점에서 다들 친절했던 기억이 있네요!!</p>
+                        <p>1시간 전</p>
+                    </div>
+                    <div><img
+                            src="./img/dotdot.png">
+                    </div>
+                </section>
+                <textarea placeholder="댓글을 입력하세요"></textarea>
+                <div>
+                    <div><input type="checkbox" class="input-chek" id="secret-check"><label for="secret-check"
+                            class="form-chek">비밀글</label></div>
+                    <div><button class="btn-555">등록하기</button></div>
+                </div>
+            </div>
+    
+            <div class="see-popular">
+                <p>베스트 후기</p>
+                <section>
+                    <div>
+                        <p>이번 9월달 결혼을 앞두고 신혼 침대를 고민하면서 여기저기 돌아다녔고, 대전 신세계점 에이스 침대 매장에 들어갔습니다. 들어가자마자 친절한 이창규점장님 이하 직원들 너무
+                            감사드립니다 ㅠㅠ
+                            한분한분 인사드릴 순 없으나 침대를 고민하는데 큰 도움을 주셔서 너무 감사드립니다.
+    
+                            1. 제품설명
+                            침대는 거품이라고 생각했던 저는 점장님의 자세한 설명을 듣고 침대를 이해하기 시작했습니다.
+                            매장에 전시되어 있는 침대를 하나하나 누워보고 저한테 맞는 침대를 추천해주셨습니다.
+    
+                            2. 친절
+                            매장에 들어가서 정말 감동받았던 부분입니다. 사실 옆 매장에 타브랜드 보다가 왔음에도 잘 응대해주셔서 기분이 너무 좋았습니다. 더워서 목이말라 물을 요청하였는데도 불쾌한
+                            기색 하나 없이 물을 가져다 주셔서 너무 감동 받았습니다^^
+    
+                            3. 제품 받을때까지 응대
+                            계약하고 제품을 받을때까지 꽤 긴시간을 가졌는데, 먼저 전화하셔서 불편한건 없는지 엘리에비터는 사용할 수 있는지 집 상황을 미리 파악하시는 센스가 너무 좋았습니다.
+                            사실 신혼집은 사다리차를 이용할 수 없었는데 미리 말씀주셔서 사전에 협의볼 수 있었습니다.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./img/reple1.jpg">
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p>변함없는 선택, 에이스!
+    
+                            이번에 교체하기 전에도 에이스 침대를 사용하였습니다. 무려 13년 동안이요. 해마다 마이크로 가드를 교체했고, 또 주기적으로 메트리스 위치를 바꿔주자 오래되었다, 망가졌다
+                            하는 느낌은 전혀 받지 못했거든요. 집이 아닌 공간에서 자야 할 때면 늘 우리집 침대가 그리울 만큼 에이스 침대는 우리에게 편안함과 안락함을 주었답니다.
+    
+                            그래도 13년은 좀 오래 쓴 거 맞지요? 그리고 요즘 들어 부쩍 많은 업무로 인해 허리 통증을 호소하던 신랑에게는 좀더 딱딱한 메트리스가 좋을 것 같다는 판단으로 매장을
+                            방문하게 되었어요. 물론 다른 고민없이 에이스 매장이었어요.
+    
+                            매장 직원 분은 시간을 내어 친절하고, 또 자세하게 우리에게 적합한 메트리스를 추천해 주셨어요. 스프링 구조가 다른 침대와는 어떻게 다른 지 설명해 주실 때에는 에이스에
+                            대해 더 큰 신뢰를 가질 수 있었답니다. 우리가 선택한 메트리스의 장점은 물론 함께 구매한 프레임과의 조화는 물론, 놓치기 쉬운 작은 디테일함까지도 차근차근 알기 쉽게
+                            설명해 주셨답니다.</p>
+                    </div>
+                    <div>
+                        <img src="./img/reple2.jpg">
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p>신혼집 침대는 역시 에이스 ❤️
+                            이번에 신혼집으로 이사하면서 제일먼저 침대를 구매하고 싶었어요 ㅎㅎ 우연히 백화점 에이스를 지나가다가 프레임이 너무 예뻐서 홀린듯이 구경하러 들어갔다가 구매했어요 ㅎㅎ
+                            직원분께서 매트리스 부터 프레임까지 하나하나씩 다 설명 해주시고 누워보라고 하셔서 다 누워보고 저희한테 제일 잘 맞는거로 구매했어요 ❤️ </p>
+                    </div>
+                    <div>
+                        <img src="./img/reple3.jpeg">
+                    </div>
+                </section>
+            </div>
+        </article>
+    
+    
+        <article class="bd-list list">
+            <h3>후기 목록</h3>
+            <section>
+                <div>
+                    <img src="./img/review1.jpeg">
+                </div>
+                <div>
+                    <h3>ERBA, DUO TECH Ⅲ</h3>
+                    <p>
+                        너무 잘 쓰고 있는 에이스 침대!
+                        구매는 롯데백화점 안산점에서 했어요. 에이스랑 타업체 돌아다녔는데 매트리스도 에이스가 편하고 매니저님께서 저희에게 맞는걸로 추천을 너무 잘 해주셔서 에이스에서 구매하게 됐어요~!
+                    </p>
+                    <small>
+                        정*주 · 6시간 전
+                    </small>
+                </div>
+            </section>
+    
+            <section>
+                <div>
+                    <img src="./img/review2.jpg">
+                </div>
+                <div>
+                    <h3>LUCE-III, ROYAL ACE 80h</h3>
+                    <p>
+                        이사하면서 교체하기로 결심 후
+                        정말 이곳저곳 수입가구부터 많이 고민했어요.
+                        고민거리를 한번에 해결해주신 실장님!
+                        조곤조곤 야무지게 상담해주셔서 감사합니다.
+                        후기로 고마움 남겨요.
+                    </p>
+                    <small>
+                        김*영 · 3일 전
+                    </small>
+                </div>
+            </section>
+    
+            <section>
+                <div>
+                    <img src="./img/review3.jpg">
+                </div>
+                <div>
+                    <h3>PRETTO, ACE BELLA-Ⅲ</h3>
+                    <p>
+                        백화점 및 대리점 방문하여 여려제품 및 브랜드 구경후
+                        한번쓰면 오래쓸것같아서 에이스침대결정
+                        집근처 용인흥덕 방문후 여러 대리점을 추가로 방문하였는데
+                        제일 친절하고 믿음직하고 정말잘해주시네요
+                        프레토 프레임에. 에이스 벨라3. 너무 좋습니다
+                    </p>
+                    <small>
+                        이*은 · 10일 전
+                    </small>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <img src="./img/review4.jpg">
+                </div>
+                <div>
+                    <h3>LUCE-III, HYBRID TECH - WHITE
+                    </h3>
+                    <p>
+                        새집으로 이사를 오면서 새로 침대 구매를 결정하게 되었습니다.
+                        침대를 구매하기 위해서 방문한 현대백화점 에이스침대 매장에서 침대를 구경하던 중 가장 맘에 드는 침대를 발견하여 구매까지 완료했습니다.
+                    </p>
+                    <small>
+                        이*훈 · 17일 전
+                    </small>
+                </div>
+            </section>
+            <button>더 보기 +</button>
+        </article>
+    
+    <div w3-include-html="footer.html"></div>
+
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+        includeHTML();
+    </script>
+
+ 
+</body>
+
+</html>
