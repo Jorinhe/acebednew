@@ -2208,12 +2208,12 @@ footer .copy {
         right: 105px;
     }
 
-    details {
+    footer details {
         border: 1px solid #464646;
         padding: 5px 20px;
     }
 
-    summary {
+    footer summary {
         font-weight: bold;
         padding: .5em;
         cursor: pointer;
@@ -2221,7 +2221,7 @@ footer .copy {
         padding-left: 1.2em;
     }
 
-    summary::before {
+    footer summary::before {
         content: "";
         position: absolute;
         border-top: 0.5em solid transparent;
@@ -2232,15 +2232,15 @@ footer .copy {
         transition: .25s;
     }
 
-    details[open] summary:before {
+    footer details[open] summary:before {
         transform: rotateZ(90deg);
     }
 
-    details[open] {
+    footer details[open] {
         padding: 5px 20px;
     }
 
-    details[open] summary {
+    footer details[open] summary {
         border-bottom: 1px solid #aaa;
     }
 
