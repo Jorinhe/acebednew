@@ -488,4 +488,8 @@ input:focus {
       margin: 70px auto;
     
     }
+    
+    .pc-show {
+        display: block;
+    }
   }
