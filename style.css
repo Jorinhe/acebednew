@@ -389,8 +389,6 @@ nav> :nth-child(1)> :nth-child(2) p {
     padding-left: 30px;
 }
 
-
-
 #sidebar.act {
     left: 00px;
 }
@@ -432,7 +430,7 @@ nav> :nth-child(1)> :nth-child(2) p {
     padding-left: 12px;
     border-radius: 0;
     border-bottom: 1px solid #ccc;
-    background: url(./img/b-ehe.png) no-repeat 95% center;
+    background: url(./img/icon_black_glass.png) no-repeat 95% center;
     background-size: 7%;
 }
 
@@ -591,35 +589,6 @@ main {
     position: relative;
 }
 
-.mousey {
-    position: absolute;
-    bottom: -200px;
-    left: 50%;
-    transform: (-50%, 0);
-    z-index: 20;
-    width: 2px;
-    height: 240px;
-    border-radius: 25px;
-    opacity: 0.75;
-    box-sizing: content-box;
-}
-
-@keyframes scroll {
-    0% {
-        opacity: 0;
-    }
-
-    70% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(60px);
-        opacity: 0;
-    }
-}
-
-
 
 .mn-sl {
     height: 800px;
@@ -660,30 +629,6 @@ main {
     background: rgba(256, 256, 256, 0.5);
 }
 
-.mn-num-cv .fill-bg .fill {
-    width: 20px;
-    height: 100%;
-    background: #e6002d;
-    animation-name: fillit;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes fillit {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(40px);
-        opacity: 0;
-    }
-}
 
 .mn-sl .swiper-wrapper .swiper-slide {
     width: 100%;
@@ -707,7 +652,7 @@ main {
 }
 
 .first {
-    background: url(./img/slide1.jpg) no-repeat;
+    background: url(./img/index_css_slide_1.jpg) no-repeat;
     background-size: cover;
     background-position: 12% center;
     position: relative;
@@ -741,7 +686,7 @@ main {
 
 .two {
     position: relative;
-    background: url(./img/slide2.jpg) no-repeat;
+    background: url(./img/index_css_slide_2.jpg) no-repeat;
     background-size: cover;
     color: #352525;
 }
@@ -764,7 +709,7 @@ main {
 
 .thr {
     position: relative;
-    background: url(./img/slide3.jpg)no-repeat;
+    background: url(./img/index_css_slide_3.jpg)no-repeat;
     background-size: cover;
     color: #352525;
     background-position: center center;
@@ -793,7 +738,7 @@ main {
 
 .four {
     position: relative;
-    background: url(./img/slide4.jpg)no-repeat;
+    background: url(./img/index_css_slide_4.jpg)no-repeat;
     background-size: cover;
     color: #352525;
     background-position: right;
@@ -854,7 +799,7 @@ main {
 .mn-sl .swiper-button-next::after {
     font-size: 1rem;
     color: #fff;
-    opacity: .8;
+    opacity: 1;
     transition: .3s;
     display: none;
 }
@@ -880,22 +825,31 @@ main {
     top: 89%;
     left: 0;
     display: none;
+
 }
 
 .mn-sl .swiper-pagination-bullet {
     width: 200px;
     height: 30px;
     border-radius: 0;
-    color: white;
+    color: #fff;
     background: transparent;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 0.9rem;
-    font-weight: 400;
+    font-weight: 800;
     top: auto;
     z-index: 9;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #fff;
     outline: none;
+    opacity: 1;
+    transition: .3s;
 }
+
+.mn-sl .swiper-pagination-bullet:hover  {
+    transform: translate( 0, -10px);
+}
+
+
 
 .recommend {
     margin: 60px 30px 150px 30px;
@@ -1025,7 +979,6 @@ main {
     font-weight: 400;
     color: #8d8d8d;
 }
-
 
 .buy>button {
     border: 1px solid rgb(133, 132, 132);
@@ -1316,7 +1269,7 @@ main {
     position: relative;
     width: 60px;
     height: 60px;
-    background:url(./img/home.png) no-repeat 100%;
+    background:url(./img/icon_home.png) no-repeat 100%;
     background-size: cover;
 }
 
@@ -1324,21 +1277,21 @@ main {
     position: relative;
     width: 60px;
     height: 60px;
-    background:url(./img/bed.png) no-repeat 100%;
+    background:url(./img/icon_bed.png) no-repeat 100%;
     background-size: cover;
 }
 .check ul> :nth-child(3)>:nth-child(1)>:nth-child(1) {
     position: relative;
     width: 60px;
     height: 60px;
-    background:url(./img/baby.png) no-repeat 100%;
+    background:url(./img/icon_baby.png) no-repeat 100%;
     background-size: cover;
 }
 .check ul> :nth-child(4)>:nth-child(1)>:nth-child(1) {
     position: relative;
     width: 60px;
     height: 60px;
-    background:url(./img/child.png) no-repeat 100%;
+    background:url(./img/icon_child.png) no-repeat 100%;
     background-size: cover;
 }
 
@@ -1395,6 +1348,7 @@ main {
     margin-top: 10px;
     font-weight: bold;
 }
+
 
 .add {
     display: flex;
@@ -1480,7 +1434,7 @@ main {
 .map>div>div input[type="text"] {
     border: none;
     background: none;
-    background: url(./img/w-ehe.png) no-repeat 95% center;
+    background: url(./img/icon_white_glass.png) no-repeat 95% center;
     background-size: 12%;
     color: white;
     border-radius: 0;
@@ -1678,16 +1632,7 @@ footer .copy {
         top: 50%;
     }
 
-    /*
-      .mn-sl .swiper-button-prev {
-        left: 5%;
-      }
-      .mn-sl .swiper-button-next {
-        right: auto;
-        left: calc(5% + 60px);
-      }
-      */
-
+    
     .mn-sl .swiper-button-prev {
         left: 120px;
         padding: 0;
@@ -1710,7 +1655,7 @@ footer .copy {
     .mn-sl .swiper-button-next::after {
         font-size: 2.6rem;
         color: #fff;
-        opacity: .8;
+        opacity: 1;
         transition: .3s;
         display: block;
     }
@@ -1765,15 +1710,7 @@ footer .copy {
         font-size: 1.3rem;
     }
 
-    .icon a,
-    a:link,
-    a:visited,
-    a:active,
-    a:focus {
-        font-size: 2.2rem;
-    }
-
-
+    
     .icon>div>div div::after {
         content: '';
         position: absolute;
@@ -1808,7 +1745,6 @@ footer .copy {
         color: white;
     }
 
-
     .thr div {
         position: absolute;
         top: 10%;
@@ -1827,7 +1763,6 @@ footer .copy {
 
     .recommend> :nth-child(1) h5 {
         font-size: 1rem;
-
     }
 
     .recommend> :nth-child(2) {
@@ -1847,7 +1782,6 @@ footer .copy {
     .recommend> :nth-child(2) section:hover>div {
         background-color: #3b3b3b3a;
     }
-
 
     .recommend> :nth-child(2) section img {
         width: 100%;
@@ -2084,13 +2018,10 @@ footer .copy {
     .inpo {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 20px;
     }
 
-    .text-name {
-        display: flex;
-        align-items: center;
-    }
-
+   
     .text-name h5 {
         margin-top: -20px;
     }
