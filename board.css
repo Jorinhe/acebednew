@@ -198,6 +198,40 @@ select:focus {
 }
 
 
+.nav-box li {
+  text-transform: uppercase;
+padding-top: 10px ;
+}
+
+#sidebar> :nth-child(1) h1 {
+text-align: left;
+}
+
+#sidebar> :nth-child(1) div ul li a {
+font-weight: 400;
+font-size: 1rem;
+margin-right: 10px;
+}
+
+#sidebar> :nth-child(1) div ul> :nth-child(1) a {
+border-right: 1px solid #ccc;
+padding-right: 10px;
+}
+
+#sidebar> :nth-child(1)> :nth-child(3) input[type="text"] {
+width: 300px;
+height: 50px;
+font-family: 'Noto Sans KR', sans-serif;
+font-size: 16px;
+margin-top: 20px;
+margin-bottom: 26px;
+padding-left: 12px;
+border-radius: 0;
+border-bottom: 1px solid #ccc;
+background: url(./img/b-ehe.png) no-repeat 95% center;
+background-size: 7%;
+}
+
 
 .bd-text {
   width: 100%;
@@ -292,7 +326,6 @@ select:focus {
   color: #000;
 }
 
-
 .see-main {
   margin-bottom: 50px;
   border-top: 2px solid #aaa;
@@ -334,8 +367,6 @@ select:focus {
   display: flex;
 }
 
-
-
 .see-main>:nth-child(1)>:nth-child(2)> p {
   margin-right: 20px;
 }
@@ -362,7 +393,6 @@ select:focus {
   text-align: center;
   padding: 60px 0;
 }
-
 
 
 .see-sharing button {
@@ -634,6 +664,7 @@ select:focus {
   padding: 24px 16px;
   border-radius: 4px;
   background: #eee;
+  text-align: left;
 }
 
 .qna-contact>div:nth-child(4)>p {
@@ -646,7 +677,8 @@ select:focus {
 }
 
 .qna-contact>div:nth-child(4) input[type="checkbox"] {
-  width: 24px;
+
+  width: 14px;
   height: 24px;
   vertical-align: -7px;
   margin-right: 10px;
@@ -908,8 +940,6 @@ select:focus {
  
 }
 
-
-
 .news-slid {
   margin-top: 200px;
   margin-bottom: 150px;
@@ -972,7 +1002,6 @@ select:focus {
   height: 20px;
   right: 10px;
   top: 15px;
-  
 }
 
 .news-list section div:nth-child(1) {
@@ -1042,7 +1071,6 @@ select:focus {
   text-align: center;
 }
 
-
 .news-list> div h3 {
   font-size: 1.6rem;
   font-weight: bold;
@@ -1050,7 +1078,7 @@ select:focus {
 
 .faq {
   border: 1px solid #eee;
-  padding: 60px 30px 30px 30px;
+  padding: 0px 30px 30px 30px;
   border-radius: 12px;
   margin-bottom: 60px;
 }
@@ -1060,41 +1088,6 @@ select:focus {
   font-weight: bold;
   margin-top: 40px;
 }
-
-.nav-box li {
-    text-transform: uppercase;
-  padding-top: 10px ;
-}
-
-#sidebar> :nth-child(1) h1 {
-  text-align: left;
-}
-
-#sidebar> :nth-child(1) div ul li a {
-  font-weight: 400;
-  font-size: 1rem;
-  margin-right: 10px;
-}
-
-#sidebar> :nth-child(1) div ul> :nth-child(1) a {
-  border-right: 1px solid #ccc;
-  padding-right: 10px;
-}
-
-#sidebar> :nth-child(1)> :nth-child(3) input[type="text"] {
-  width: 300px;
-  height: 50px;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 16px;
-  margin-top: 20px;
-  margin-bottom: 26px;
-  padding-left: 12px;
-  border-radius: 0;
-  border-bottom: 1px solid #ccc;
-  background: url(./img/b-ehe.png) no-repeat 95% center;
-  background-size: 7%;
-}
-
 
 /* end */
 @media screen and (min-width: 1366px) {
@@ -1139,4 +1132,5 @@ select:focus {
   .news-list div:nth-child(1)>div:nth-child(2) select {
     width: 100px;
   }
+
 }
