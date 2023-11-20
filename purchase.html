@@ -112,7 +112,7 @@
                     </div>
                 </div>
                 <div class="checks-btn">
-                    <button id="btn-modal2">장바구니</button>
+                    <button id="btn-modal">장바구니</button>
                     <button id="btn-modal1">구매하기</button>
                 </div>
     </article>
@@ -130,6 +130,31 @@
         </div>
     </div>
    
+
+
+    <script>
+        const modal = document.getElementById("modal")
+        const btnModal = document.getElementById("btn-modal")
+        btnModal.addEventListener("click", e => {
+            modal.style.display = "flex"
+        })
+        const closeBtn = modal.querySelector(".close-area")
+        closeBtn.addEventListener("click", e => {
+            modal.style.display = "none"
+        })
+    </script>
+
+<script>
+    const modal1 = document.getElementById("modal")
+    const btnModal1 = document.getElementById("btn-modal1")
+    btnModal1.addEventListener("click", e => {
+        modal.style.display = "flex"
+    })
+    const closeBtn1 = modal.querySelector(".close-area")
+    closeBtn.addEventListener("click", e => {
+        modal.style.display = "none"
+    })
+</script>
 
 
     <script style="display: none;">
@@ -150,6 +175,8 @@
             totalPrice.innerText = total + ' 원';
         }
     </script>
+
+
 
 
 
