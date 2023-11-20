@@ -303,7 +303,6 @@ select {
     margin-top: 20px;
     padding-bottom: 20px;
     text-align: left;
-    border-bottom: 1px solid #ccc;
 }
 
 .sell>:nth-child(1)>:nth-child(1)>:nth-child(1) {
