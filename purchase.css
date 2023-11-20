@@ -674,7 +674,6 @@ select {
         display: flex;
         justify-content: space-between;
         align-items: start;
-        border-bottom: 1px solid #ccc ;
     }
 
     .mains> :nth-child(1) {
